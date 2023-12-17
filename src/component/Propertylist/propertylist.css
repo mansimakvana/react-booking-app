@@ -1,0 +1,56 @@
+.property-list{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.property-container{
+    width: 100%;
+    max-width: 1024px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-card{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+    overflow: hidden;
+}
+
+.image-card:hover{
+    transition: all 300ms ease-in;
+}
+
+.property-name{
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 20px;
+}
+
+.slider-buttons{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    color: #000;
+    display: flex;
+    /* gap: 700px; */
+}
+
+.slider-buttons button{
+    /* position: absolute; */
+    /* top:20px; */
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #003580;
+}

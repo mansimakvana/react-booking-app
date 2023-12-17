@@ -1,0 +1,46 @@
+.quick-planner-list{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    /* gap:10px; */
+}
+
+.quick-planner-container{
+    width: 100%;
+    max-width: 1024px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-card-quick{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+    overflow: hidden;
+}
+
+.slider-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    /* gap: 700px; */
+}
+
+.slider-buttons button{
+    /* position: absolute; */
+    /* top:20px; */
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    /* padding: 5px 10px; */
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #003580;
+}

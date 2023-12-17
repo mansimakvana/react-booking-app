@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Hotels",
+        "image": "../../img/hotels.jpeg"
+    },
+    {
+        "name": "Apartments",
+        "image": "../../img/apartments.jpeg"
+    },
+    {
+        "name": "Resorts",
+        "image": "../../img/resorts.jpeg"
+    },
+    {
+        "name": "Villas",
+        "image": "../../img/villas.jpeg"
+    },
+    {
+        "name": "Cabins",
+        "image": "../../img/cabins.jpeg"
+    },
+    {
+        "name": "Cottages",
+        "image": "../../img/cottages.jpeg"
+    },
+    {
+        "name": "Serviced Apartment",
+        "image": "../../img/servicedapartment.jpeg"
+    },
+    {
+        "name": "Holiday Homes",
+        "image": "../../img/holidayhomes.jpeg"
+    },
+    {
+        "name": "Guest House",
+        "image": "../../img/guesthouse.jpeg"
+    }
+]

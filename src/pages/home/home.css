@@ -5,3 +5,20 @@
     align-items: center;
     gap: 30px;
 }
+
+.home-title{
+    width: 1024px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.planner-title{
+    width: 1024px;
+    font-size: 20px;
+}
+
+.planner-detail{
+    color: black;
+    opacity: 0.5;
+    /* font-weight: 10px; */
+}

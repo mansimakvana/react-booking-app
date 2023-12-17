@@ -55,6 +55,7 @@
 
 .header-search{
     height: 60px;
+    z-index: 999;
     background-color: white;
     border: 3px solid #febb04;
     display: flex;
