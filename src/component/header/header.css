@@ -12,6 +12,10 @@
     margin: 20px 0px 100px 0px;
 }
 
+.header-container.listmode{
+    margin: 20px 0px 0px 0px;
+}
+
 .header-list{
     display: flex;
     gap: 20px;
