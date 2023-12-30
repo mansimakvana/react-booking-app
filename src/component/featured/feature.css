@@ -17,8 +17,8 @@
 .feature-img{
     width: 100%;
     object-fit: cover;
-    
 }
+
 .feature-title{
     position: absolute;
     bottom: 10px;
@@ -27,4 +27,29 @@
     font-weight: 900px;
     font-size: 15px;
     z-index: 999;
+}
+
+@media screen and (max-width:600px){
+    .feature{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+    }
+    .feature-items{
+        position: relative;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100px;
+    }
+    .feature-title{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        padding: 10px;
+        font-weight: 800px;
+        font-size: 10px;
+        z-index: 999;
+    }
 }

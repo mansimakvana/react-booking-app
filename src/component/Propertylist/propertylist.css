@@ -6,11 +6,13 @@
     gap:10px;
 }
 
+.property-wrapper{
+    position: relative;
+}
 .property-container{
     width: 100%;
     max-width: 1024px;
     overflow: hidden;
-    position: relative;
 }
 
 .image-card{
@@ -21,9 +23,6 @@
     overflow: hidden;
 }
 
-.image-card:hover{
-    transition: all 300ms ease-in;
-}
 
 .property-name{
     font-size: 20px;
@@ -33,16 +32,17 @@
 
 .slider-buttons{
     display: flex;
-    align-items:end;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
     color: #000;
-    display: flex;
-    /* gap: 700px; */
+    z-index: 999;
+    position: absolute;
+    top:85px;
+    /* right: 10px; */
 }
 
 .slider-buttons button{
-    /* position: absolute; */
-    /* top:20px; */
     height: 40px;
     width: 40px;
     font-size: 20px;
@@ -51,6 +51,10 @@
     padding: 5px 10px;
     border: none;
     outline: none;
-    color: white;
-    background-color: #003580;
+    color: black;
+    background-color: lightgray;
+}
+
+button :disabled{
+    cursor: not-allowed;
 }

@@ -6,11 +6,18 @@
     /* gap:10px; */
 }
 
+.quick-planner-wrapper{
+    position: relative;
+}
+
 .quick-planner-container{
     width: 100%;
     max-width: 1024px;
     overflow: hidden;
-    position: relative;
+}
+
+.image-wrapper{
+    overflow: hidden;
 }
 
 .image-card-quick{
@@ -18,21 +25,25 @@
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    transition: all 300ms ease-in;
+    /* transition: all 300ms ease-in; */
     overflow: hidden;
 }
 
-.slider-buttons{
+.slider-buttons-quick{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     color: #000;
-    /* gap: 700px; */
+    z-index: 999;
+    position: absolute;
+    top:53px;
+    /* right: 10px; */
+    overflow: hidden;
+
 }
 
-.slider-buttons button{
-    /* position: absolute; */
-    /* top:20px; */
+.slider-buttons-quick button{
     height: 40px;
     width: 40px;
     font-size: 20px;
@@ -41,6 +52,6 @@
     /* padding: 5px 10px; */
     border: none;
     outline: none;
-    color: white;
-    background-color: #003580;
+    color: black;
+    background-color: lightgrey;
 }
