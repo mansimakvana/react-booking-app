@@ -30,3 +30,26 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width:600px) {
+    .mail-input-container>input{
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        margin-right: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .mail-input-container>button{
+        height: 40px;
+        background-color: #0071c2;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

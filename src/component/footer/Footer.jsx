@@ -1,52 +1,89 @@
 import "./footer.css";
 
 const Footer = () => {
+  const footer_list1 = [
+    "Countries",
+    "Regions",
+    "Cities",
+    "Districts",
+    "Airports",
+    "Hotels",
+  ];
+
+  const footer_list2 = [
+    "Homes",
+    "Apartments",
+    "Resorts",
+    "Villas",
+    "Hotels",
+    "Guest House",
+  ];
+  const footer_list3 = [
+    "Car hire",
+    "Flight finder",
+    "Restaurant reservation",
+    "Travel Agents",
+  ];
+  const footer_list4 = [
+    "Unique places to stay",
+    "All destinations",
+    "Discover",
+    "Reviews",
+    "Discover monthly stay",
+    "Travel Article",
+    "Seasonals and holiday deals",
+    "Traveller Review",
+  ];
+
+  const footer_list5 = [
+    "About Booking.com",
+    "Customer Service Help",
+    "Partner Help",
+    "Careers",
+    "Sustainability",
+    "Press centre",
+    "Terms & conditions",
+    "Partner dispute",
+    "How we work",
+    "We Price Match",
+  ];
   return (
     <div className="footer">
       <div className="footer-container">
         <div className="footer-list">
-          <ul className="f-list-item">Countries</ul>
-          <ul className="f-list-item">Regions</ul>
-          <ul className="f-list-item">Cities</ul>
-          <ul className="f-list-item">Districts</ul>
-          <ul className="f-list-item">Airports</ul>
-          <ul className="f-list-item">Hotels</ul>
+          {footer_list1.map((listitem, index) => (
+            <ul className="f-list-item" key={index}>
+              {listitem}
+            </ul>
+          ))}
         </div>
         <div className="footer-list">
-          <ul className="f-list-item">Homes</ul>
-          <ul className="f-list-item">Apartments</ul>
-          <ul className="f-list-item">Resorts</ul>
-          <ul className="f-list-item">Villas</ul>
-          <ul className="f-list-item">Hotels</ul>
-          <ul className="f-list-item">Guest House</ul>
+          {footer_list2.map((listitem, index) => (
+            <ul className="f-list-item" key={index}>
+              {listitem}
+            </ul>
+          ))}
         </div>
         <div className="footer-list">
-          <ul className="f-list-item">Car hire</ul>
-          <ul className="f-list-item">Flight finder</ul>
-          <ul className="f-list-item">Restaurant reservation</ul>
-          <ul className="f-list-item">Travel Agents</ul>
+          {footer_list3.map((listitem, index) => (
+            <ul className="f-list-item" key={index}>
+              {listitem}
+            </ul>
+          ))}
         </div>
         <div className="footer-list">
-          <ul className="f-list-item">Unique places to stay</ul>
-          <ul className="f-list-item">All destinations</ul>
-          <ul className="f-list-item">Discover</ul>
-          <ul className="f-list-item">Reviews</ul>
-          <ul className="f-list-item">Discover monthly stay</ul>
-          <ul className="f-list-item">Travel Article</ul>
-          <ul className="f-list-item">Seasonals and holiday deals</ul>
-          <ul className="f-list-item">Traveller Review</ul>
+          {footer_list4.map((listitem, index) => (
+            <ul className="f-list-item" key={index}>
+              {listitem}
+            </ul>
+          ))}
         </div>
         <div className="footer-list">
-          <ul className="f-list-item">About Booking.com</ul>
-          <ul className="f-list-item">Customer Service Help</ul>
-          <ul className="f-list-item">partner help</ul>
-          <ul className="f-list-item">careers</ul>
-          <ul className="f-list-item">Sustainability</ul>
-          <ul className="f-list-item">Press centre</ul>
-          <ul className="f-list-item">Terms & conditions</ul>
-          <ul className="f-list-item">Partner dispute</ul>
-          <ul className="f-list-item">How we work</ul>
-          <ul className="f-list-item">We Price Match</ul>
+          {footer_list5.map((listitem, index) => (
+            <ul className="f-list-item" key={index}>
+              {listitem}
+            </ul>
+          ))}
         </div>
       </div>
       <div className="f-text">

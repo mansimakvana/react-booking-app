@@ -11,6 +11,7 @@
     margin-bottom: 50px;
 }
 
+
 .f-list-item{
     color: #003580;
     cursor: pointer;
@@ -21,4 +22,21 @@
 .f-list-item:hover{
     color: #0071c2;
     
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        width: 98%;
+        /* max-width: 1024px; */
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:750px){
+    .footer{
+        width: 98%;
+        /* max-width: 1024px; */
+        padding: 10px;
+        font-size: 12px;
+    }
 }
