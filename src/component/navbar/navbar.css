@@ -29,14 +29,11 @@
 }
 
 
-@media screen and (max-width:600px) {
-    .nav-container{
-        width: 80%;
-    }
+@media (max-width: 768px) {
+    
 }
 
-@media screen and (max-width:768px) {
-    .nav-container{
-        width: 80%;
-    }
+/* For screens up to 600px */
+@media (max-width: 600px) {
+    
 }

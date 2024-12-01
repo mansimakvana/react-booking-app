@@ -1,46 +1,118 @@
-.hg{
-    width: 100%;
-    max-width: 1024px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.hg {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.hg-container{
+.hg-container {
+  flex: 1;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hg-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hgname {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.hgcity {
+  font-weight: 300;
+  font-size: 15px;
+}
+.hgprice {
+  font-weight: 600;
+  font-size: 15px;
+}
+.hg-rating > button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.hg-rating > span {
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .hg {
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px; /* Reduce gap between elements */
+    justify-content: center; /* Center align for better appearance */
+  }
+
+  .hg-container {
+    gap: 5px; /* Slightly increase internal spacing */
+  }
+
+  .hg-image {
+    border-radius: 8px; /* Reduce border radius */
+  }
+
+  .hgname {
+    font-size: 18px; /* Slightly reduce font size */
+    margin-top: 8px;
+  }
+
+  .hgcity,
+  .hgprice {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+
+  .hg-rating > button {
+    padding: 3px 6px; /* Reduce button padding */
+  }
+
+  .hg-rating > span {
+    font-size: 13px; /* Slightly smaller font */
+  }
+}
+
+/* For screens up to 600px */
+@media (max-width: 600px) {
+  .hg {
+    flex-direction: row; /* Stack elements vertically */
+    align-items:center; /* Center align the stack */
+    gap: 10px; /* Reduce gap between stacked elements */
+  }
+
+  .hg-container {
     flex: 1;
     gap: 2px;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.hg-image{
-    width: 100%;
-    border-radius: 10px;
-}
+  .hg-image {
+    width: 30%;
+    border-radius: 6px; /* Further reduce border radius */
+  }
 
-.hgname{
-    font-weight: bolder;
-    margin-top: 10px;
-}
+  .hgname {
+    font-size: 14px; /* Further reduce font size */
+  }
 
-.hgcity{
-    font-weight: 300;
-    font-size: 15px;
-}
-.hgprice{
-    font-weight: 600;
-    font-size: 15px;
-}
-.hg-rating>button{
-    background-color: #003580;
-    color: white;
-    border: none;
-    outline: none;
-    padding: 4px;
-    font-weight: bold;
-    margin-right: 10px;
-}
+  .hgcity,
+  .hgprice {
+    font-size: 13px; /* Smaller font for compact appearance */
+  }
 
-.hg-rating>span{
-    font-size: 14px;
+  .hg-rating > button {
+    padding: 2px 5px; /* Compact button size */
+  }
+
+  .hg-rating > span {
+    font-size: 12px; /* Smallest font for readability */
+  }
 }

@@ -6,7 +6,111 @@ import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import SearchItem from "../../component/searchitem/SearchItem";
-import searchData from "../../utils/searchData";
+// import searchData from "../../utils/searchData";
+import img1 from "../../../img/hotel1.png"
+import img2 from "../../../img/hotel2.png"
+import img3 from "../../../img/hotel3.png"
+import img4 from "../../../img/hotel5.png"
+import img5 from "../../../img/hotel6.png"
+import img6 from "../../../img/hotel7.png"
+import img7 from "../../../img/hotel8.png"
+// import img8 from "../../../img/hotel8"
+
+
+const searchData = [
+  {
+      image: img1,
+      title: "Hytt Ahedabad",
+      distance: "500m from Apartment",
+      taxiOp : "Free Airtport Taxi",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Excellent",
+      ratingBtn : "8.9",
+      price: "$789",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img2,
+      title: "Hotel Good night",
+      distance: "267m from Apartment",
+      taxiOp : "Charge Included",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Good",
+      ratingBtn : "6.5",
+      price: "$123",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img3,
+      title: "Hotel Dream Inn",
+      distance: "378m from Apartment",
+      taxiOp : "Taxi Charges Included",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Average",
+      ratingBtn : "7.6",
+      price: "$345",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img4,
+      title: "Hotel Green Tree",
+      distance: "267m from Apartment",
+      taxiOp : "Charge Included",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Good",
+      ratingBtn : "6.5",
+      price: "$456",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img5,
+      title: "Hotel GGC Inn",
+      distance: "98m from Apartment",
+      taxiOp : "Free Taxi Service",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Good",
+      ratingBtn : "6.5",
+      price: "$456",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img6,
+      title: "Fab Express Gokul Villa",
+      distance: "678m from Apartment",
+      taxiOp : "Free Taxi/ No Charges",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Fabulous",
+      ratingBtn : "7.8",
+      price: "$456",
+      tax: "Includes tax and fees",
+  },
+  {
+      image: img7,
+      title: "Terazzo Suits",
+      distance: "267m from Apartment",
+      taxiOp : "Charge Included",
+      subTitle : "Studio Apartment with Air Conditiong", 
+      feature: "Entire Studio",
+      cancelOp: "Free Cancellation",
+      rating : "Good",
+      ratingBtn : "6.5",
+      price: "$89",
+      tax: "Includes tax and fees",
+  }
+]
+
 
 const List = () => {
   const location = useLocation();

@@ -3,7 +3,7 @@ import "./maillist.css";
 const MailList = () => {
   return (
     <div className="mail">
-      <h1 className="mail-title">Save time, save money!</h1>
+      <h1 className="mail-title">Save time, Save money!</h1>
       <span className="mail-desc">
         Sign up and we'll send the best deals to you
       </span>
