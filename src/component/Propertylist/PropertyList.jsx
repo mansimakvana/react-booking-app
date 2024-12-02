@@ -1,63 +1,88 @@
 import "./propertylist.css";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { sliderSettings } from "../../utils/common";
-import img1 from "../../../img/hotels.jpeg"
-import img2 from "../../../img/apartments.jpeg"
-import img3 from "../../../img/resorts.jpeg"
-import img4 from "../../../img/villas.jpeg"
-import img5 from "../../../img/cabins.jpeg"
-import img6 from "../../../img/cottages.jpeg"
-import img7 from "../../../img/servicedapartment.jpeg"
-import img8 from "../../../img/holidayhomes.jpeg"
-import img9 from "../../../img/guesthouse.jpeg"
+import "swiper/css/bundle";
+import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+
+// Images
+import img1 from "../../../img/hotels.jpeg";
+import img2 from "../../../img/apartments.jpeg";
+import img3 from "../../../img/resorts.jpeg";
+import img4 from "../../../img/villas.jpeg";
+import img5 from "../../../img/cabins.jpeg";
+import img6 from "../../../img/cottages.jpeg";
+import img7 from "../../../img/servicedapartment.jpeg";
+import img8 from "../../../img/holidayhomes.jpeg";
+import img9 from "../../../img/guesthouse.jpeg";
 
 const PropertyData = [
   {
-      "name": "Hotels",
-      "image": img1
+    name: "Hotels",
+    image: img1,
   },
   {
-      "name": "Apartments",
-      "image": img2
+    name: "Apartments",
+    image: img2,
   },
   {
-      "name": "Resorts",
-      "image": img3
+    name: "Resorts",
+    image: img3,
   },
   {
-      "name": "Villas",
-      "image": img4
+    name: "Villas",
+    image: img4,
   },
   {
-      "name": "Cabins",
-      "image": img5
+    name: "Cabins",
+    image: img5,
   },
   {
-      "name": "Cottages",
-      "image": img6
+    name: "Cottages",
+    image: img6,
   },
   {
-      "name": "Serviced Apartment",
-      "image": img7
+    name: "Serviced Apartment",
+    image: img7,
   },
   {
-      "name": "Holiday Homes",
-      "image": img8
+    name: "Holiday Homes",
+    image: img8,
   },
   {
-      "name": "Guest House",
-      "image": img9
-  }
-]
+    name: "Guest House",
+    image: img9,
+  },
+];
 
 const PropertyList = () => {
   return (
     <div className="property-list">
       <div className="property-wrapper">
         <div className="property-container">
-          <Swiper {...sliderSettings}>
-            <SliderButtons />
+          <Swiper
+            className="swiper"
+            spaceBetween={10}
+            breakpoints={{
+              600: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
+            modules={[Navigation, Autoplay]}
+          >
             {PropertyData.map((card, i) => (
               <SwiperSlide key={i}>
                 <div className="image-card">
@@ -78,14 +103,3 @@ const PropertyList = () => {
 };
 
 export default PropertyList;
-
-const SliderButtons = () => {
-  const swiper = useSwiper();
-
-  return (
-    <div className="slider-buttons">
-      <button onClick={() => swiper.slidePrev()}>&lt;</button>
-      <button onClick={() => swiper.slideNext()}>&gt;</button>
-    </div>
-  );
-};

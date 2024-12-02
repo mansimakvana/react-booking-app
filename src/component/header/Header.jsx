@@ -78,10 +78,10 @@ const Header = ({ type }) => {
             <FontAwesomeIcon icon={faBed} />
             <span>Attractions</span>
           </div>
-          <div className="header-list-item">
+          {/* <div className="header-list-item">
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
-          </div>
+          </div> */}
         </div>
 
         {type !== "list" && (

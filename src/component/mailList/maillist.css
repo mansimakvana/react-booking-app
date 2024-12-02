@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width:600px) {
+
+    .mail{
+        padding: 25px;
+    }
     .mail-input-container>input{
         width: 250px;
         height: 40px;
@@ -46,10 +50,18 @@
         height: 40px;
         background-color: #0071c2;
         color: white;
-        font-weight: 500;
+        font-weight: 300;
         border: none;
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    .mail-title{
+        font-size: 30px;
+    }
+
+    .mail-desc{
+        font-size: 15px;
     }
 }
