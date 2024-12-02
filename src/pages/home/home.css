@@ -22,3 +22,28 @@
     opacity: 0.5;
     /* font-weight: 10px; */
 }
+
+@media screen and (max-width: 768px) {
+    .home-title{
+        width: 90%;
+    }
+
+    .planner-title{
+        width: 90%;
+    }
+    .planner-detail{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-title{
+        width: 90%;
+    }
+
+    .planner-title{
+        width: 90%;
+    }
+    .planner-detail{
+        font-size: 15px;
+    }
+}

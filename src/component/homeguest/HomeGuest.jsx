@@ -29,7 +29,7 @@ const HomeGuest = () => {
       </div>
       <div className="hg-container">
         <img className="hg-image" src={homeguest3} alt="" />
-        <span className="hgname">Flora Chiado Apartments</span>
+        <span className="hgname">Flora Chiado</span>
         <span className="hgcity">Portugal</span>
         <span className="hgprice">Starting from $405</span>
         <div className="hg-rating">
@@ -39,7 +39,7 @@ const HomeGuest = () => {
       </div>
       <div className="hg-container">
         <img className="hg-image" src={homeguest4} alt="" />
-        <span className="hgname">Zoku Amsterdam</span>
+        <span className="hgname">Amsterdam</span>
         <span className="hgcity">Netharlands</span>
         <span className="hgprice">Starting from $120</span>
         <div className="hg-rating">

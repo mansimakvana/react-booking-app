@@ -2,8 +2,8 @@ import "./propertylist.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
-import { Navigation } from "swiper/modules";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper/modules";
 
 // Images
 import img1 from "../../../img/hotels.jpeg";
@@ -17,42 +17,15 @@ import img8 from "../../../img/holidayhomes.jpeg";
 import img9 from "../../../img/guesthouse.jpeg";
 
 const PropertyData = [
-  {
-    name: "Hotels",
-    image: img1,
-  },
-  {
-    name: "Apartments",
-    image: img2,
-  },
-  {
-    name: "Resorts",
-    image: img3,
-  },
-  {
-    name: "Villas",
-    image: img4,
-  },
-  {
-    name: "Cabins",
-    image: img5,
-  },
-  {
-    name: "Cottages",
-    image: img6,
-  },
-  {
-    name: "Serviced Apartment",
-    image: img7,
-  },
-  {
-    name: "Holiday Homes",
-    image: img8,
-  },
-  {
-    name: "Guest House",
-    image: img9,
-  },
+  { name: "Hotels", image: img1 },
+  { name: "Apartments", image: img2 },
+  { name: "Resorts", image: img3 },
+  { name: "Villas", image: img4 },
+  { name: "Cabins", image: img5 },
+  { name: "Cottages", image: img6 },
+  { name: "Serviced Apartment", image: img7 },
+  { name: "Holiday Homes", image: img8 },
+  { name: "Guest House", image: img9 },
 ];
 
 const PropertyList = () => {
@@ -63,30 +36,32 @@ const PropertyList = () => {
           <Swiper
             className="swiper"
             spaceBetween={10}
+            slidesPerView={2} // Default for smallest screens
             breakpoints={{
               600: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 15,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
               },
             }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+            navigation
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
             }}
             modules={[Navigation, Autoplay]}
           >
             {PropertyData.map((card, i) => (
-              <SwiperSlide key={i}>
+              <SwiperSlide key={i} className="swiper-slide">
                 <div className="image-card">
-                  <img className="property-img" src={card.image} alt="" />
+                  <img className="property-img" src={card.image} alt={card.name} />
                   <div className="name">
                     <span className="property-name">
                       <b>{card.name}</b>

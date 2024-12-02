@@ -16,6 +16,7 @@
 .hg-image {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .hgname {
@@ -39,6 +40,7 @@
   padding: 4px;
   font-weight: bold;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .hg-rating > span {
@@ -46,8 +48,78 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hg {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .hg-container {
+    gap: 1px;
+  }
+
+  .hg-image {
+    width: 90%;
+  }
+  
+  .hgname {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .hgcity {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .hgprice {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .hg-rating > button {
+    padding: 3px;
+    font-weight: 400;
+    margin-right: 5px;
+  }
+  
+  .hg-rating > span {
+    font-size: 14px;
+  }
   
 }
 @media screen and (max-width: 600px) {
+  .hg {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .hg-container {
+    gap: 1px;
+  }
+
+  .hg-image {
+    width: 90%;
+  }
+  
+  .hgname {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .hgcity {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .hgprice {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .hg-rating > button {
+    padding: 3px;
+    font-weight: 400;
+    margin-right: 5px;
+  }
+  
+  .hg-rating > span {
+    font-size: 14px;
+  }
   
 }
