@@ -41,6 +41,7 @@
 .header-des {
   margin: 20px 0px;
   font-size: 18px;
+  text-align: justify;
 }
 
 .header-btn {
@@ -105,13 +106,10 @@
 .options {
   position: absolute;
   top: 55px;
-  /* margin: 10px; */
   background-color: white;
   color: black;
   border-radius: 5px;
-  /* font-size: 15px; */
   z-index: 999;
-  /* border: 1px solid gray; */
 }
 
 .option-item {
@@ -127,7 +125,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  /* font-size: 15px; */
 }
 
 .option-counter-number {
@@ -153,10 +150,53 @@
     width: 90%;
     margin: 20px 0px 100px 0px;
   }
-  .header-search {
-    padding: 10px 0px;
-    width: 90%;
+  .header-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 25px;
   }
+  .header-list-item {
+    font-size: 18px;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 25px;
+  }
+  .header-des {
+    font-size: 18px;
+  }
+
+  .header-search {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .header-search-input {
+    font-size: 10px;
+    width: 70px;
+  }
+
+  .header-search-text {
+    font-size: 10px;
+  }
+  .header-icon {
+    font-size: 15px;
+  }
+
+  .option-counter-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  
 }
 @media (max-width: 600px) {
   .header-container {
@@ -167,24 +207,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 5px;
     margin-bottom: 25px;
+  }
+  .header-list-item {
+    font-size: 18px;
   }
 
   .header-title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .header-des {
     font-size: 18px;
   }
 
   .header-search {
-    height: 90px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: self-start;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     padding: 20px;
+  }
+
+  .header-search-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 }

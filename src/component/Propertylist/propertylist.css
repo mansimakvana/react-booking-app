@@ -71,7 +71,6 @@
     left: 10px;
   }
   
-  /* Responsive Styles */
   @media screen and (max-width: 1024px) {
     .property-img {
       max-width: 250px;
@@ -81,6 +80,11 @@
   @media screen and (max-width: 768px) {
     .property-img {
       max-width: 200px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 10px;
+      height: 10px;
     }
   }
   
@@ -95,8 +99,8 @@
   
     .swiper-button-next,
     .swiper-button-prev {
-      width: 25px;
-      height: 25px;
+      width: 10px;
+      height: 10px;
     }
   }
   

@@ -19,7 +19,7 @@ const HomeGuest = () => {
       </div>
       <div className="hg-container">
         <img className="hg-image" src={homeguest2} alt="" />
-        <span className="hgname">Vita Apartments</span>
+        <span className="hgname">Vita Flats</span>
         <span className="hgcity">Italy</span>
         <span className="hgprice">Starting from $128</span>
         <div className="hg-rating">

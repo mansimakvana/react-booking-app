@@ -25,19 +25,20 @@
 
 @media screen and (max-width: 768px) {
     .home-title{
+        font-size: 18px;
         width: 90%;
     }
 
     .planner-title{
-        width: 90%;
+        font-size: 18px;
     }
     .planner-detail{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 600px) {
     .home-title{
-        width: 90%;
+        font-size: 18px;
     }
 
     .planner-title{

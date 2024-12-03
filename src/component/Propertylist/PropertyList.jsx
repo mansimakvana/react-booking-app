@@ -35,11 +35,11 @@ const PropertyList = () => {
         <div className="property-container">
           <Swiper
             className="swiper"
-            spaceBetween={10}
+            spaceBetween={5}
             slidesPerView={2} // Default for smallest screens
             breakpoints={{
               600: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
               },
               768: {

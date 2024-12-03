@@ -37,10 +37,7 @@
         height: 130px;
     }
     .feature-title{
-        bottom: 0px;
-        left: 0;
-        padding: 10px;
-        font-weight: 700px;
+        font-weight: 500px;
         font-size: 10px;
     }
 }
@@ -54,10 +51,7 @@
         height: 100px;
     }
     .feature-title{
-        bottom: 0px;
-        left: 0;
-        padding: 10px;
-        font-weight: 700px;
+        font-weight: 500px;
         font-size: 10px;
     }
 }

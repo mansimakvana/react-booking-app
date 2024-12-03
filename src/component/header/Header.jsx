@@ -74,10 +74,10 @@ const Header = ({ type }) => {
             <FontAwesomeIcon icon={faCar} />
             <span>Car rentals</span>
           </div>
-          <div className="header-list-item">
+          {/* <div className="header-list-item">
             <FontAwesomeIcon icon={faBed} />
             <span>Attractions</span>
-          </div>
+          </div> */}
           {/* <div className="header-list-item">
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
@@ -87,7 +87,7 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="header-title">
-              A lifetime of discounts ? It's Genius.
+              A lifetime of discounts ? <br/>It's Genius.
             </h1>
             <p className="header-des">
               Get rewarded for your travels - unlock instant savings of 10% or
@@ -100,7 +100,7 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faBed} className="header-icon" />
                 <input
                   type="text"
-                  placeholder="Where are you going?"
+                  placeholder="Destination"
                   className="header-search-input"
                   onChange={(e) => setDestination(e.target.value)}
                 />

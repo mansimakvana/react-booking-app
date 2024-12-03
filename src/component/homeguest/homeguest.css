@@ -110,16 +110,16 @@
   }
   .hgprice {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
   }
   .hg-rating > button {
-    padding: 3px;
+    padding: 2px;
     font-weight: 400;
     margin-right: 5px;
   }
   
   .hg-rating > span {
-    font-size: 14px;
+    font-size: 12px;
   }
   
 }

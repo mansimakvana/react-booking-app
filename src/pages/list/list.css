@@ -1,110 +1,136 @@
-.list-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.list-wrapper{
-    width: 100%;
-    max-width: 1024px;
-    display: flex;
-    gap: 20px;
+.list-wrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
 }
 
-.list-search{
-    flex: 1;
-    background-color: #febb02;
-    padding: 10px;
-    border-radius: 10px;
-    position: sticky;
-    top: 10px;
-    height: max-content;
+.list-search {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
 }
 
-.list-result{
-    flex: 3;
+.list-result {
+  flex: 3;
 }
 
-.list-search-title{
-    color: gray;
-    font-size: 20px;
-    margin-bottom: 20px;
+.list-search-title {
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.list-search-item{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
+.list-search-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-.list-search-item>label{
-    font-size: 15px;
+.list-search-item > label {
+  font-size: 15px;
 }
 
-.list-search-item>input{
-    height: 30px;
-    border: none;
-    outline: none;
-    padding: 10px;
+.list-search-item > input {
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 10px;
 }
 
-.list-search-item>span{
-    height: 30px;
-    padding: 5px;
-    font-size: 15px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.list-search-item > span {
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.list-item-options{
-    padding: 10px;
+.list-item-options {
+  padding: 10px;
 }
-.list-option-item{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    color: #555;
-    font-size: 15px;
+.list-option-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 15px;
 }
 
-.list-option-input{
-    width: 30%;
-
+.list-option-input {
+  width: 30%;
 }
-.list-search>button{
-    padding: 10px;
-    background-color: #0071c2;
-    color: white;
-    border: none;
-    outline: none;
-    font-weight: 500%;
-    width: 100%;
-    font-size: 17px;
+.list-search > button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 500%;
+  width: 100%;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 768px) {
-    .list-wrapper{
-        width: 95%;
-    }
-    .list-search-title{
-        font-size: 18px;
-    }
+  .list-wrapper {
+    width: 90%;
+  }
+  .list-search-title {
+    font-size: 12px;
+  }
 
-    .list-search-item>span{
-        height: 40px;
-        font-size: 12px;
-    }
-    
-    .list-option-item{
-        font-size: 12px;
-    }
-    
-    .list-search>button{
-        padding: 5px;
-        font-weight: 400;
-        font-size: 14px;
-    
-}}
+  .list-search-item > span {
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .list-option-item {
+    font-size: 10px;
+  }
+
+  .list-search > button {
+    padding: 5px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .list-result {
+    flex: 4;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list-wrapper {
+    width: 90%;
+  }
+  .list-search-title {
+    font-size: 12px;
+  }
+
+  .list-search-item > span {
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .list-option-item {
+    font-size: 10px;
+  }
+
+  .list-search > button {
+    padding: 5px;
+  }
+  .list-result {
+    flex: 4;
+  }
+}
