@@ -26,16 +26,14 @@
 
 @media screen and (max-width:600px){
     .footer{
-        width: 98%;
-        /* max-width: 1024px; */
+        width: 90%;
         padding: 5px;
         font-size: 10px;
     }
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
     .footer{
-        width: 98%;
-        /* max-width: 1024px; */
+        width: 90%;
         padding: 5px;
         font-size: 10px;
     }

@@ -130,11 +130,11 @@ const List = () => {
           <div className="list-search">
             <h1 className="list-search-title">Search</h1>
             <div className="list-search-item">
-              <label htmlFor="">Destination</label>
+              <label htmlFor="" className="label">Destination</label>
               <input type="text" placeholder={destination} />
             </div>
             <div className="list-search-item">
-              <label htmlFor="">Check-in Date</label>
+              <label htmlFor="" className="label">Check-in Date</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(
                 date[0].startDate,
                 "dd/MM/yyyy"

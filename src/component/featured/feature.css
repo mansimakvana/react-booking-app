@@ -37,8 +37,8 @@
         height: 130px;
     }
     .feature-title{
-        font-weight: 500px;
-        font-size: 10px;
+        font-weight: 400px;
+        font-size: 8px;
     }
 }
 
@@ -51,7 +51,7 @@
         height: 100px;
     }
     .feature-title{
-        font-weight: 500px;
-        font-size: 10px;
+        font-weight: 400px;
+        font-size: 8px;
     }
 }

@@ -88,6 +88,16 @@
   .list-wrapper {
     width: 90%;
   }
+  .list-search{
+    width: 120px;
+    padding: 5px;
+    flex: 1;
+  }
+
+  .list-wrapper {
+    gap: 10px;
+  }
+
   .list-search-title {
     font-size: 12px;
   }
@@ -107,12 +117,23 @@
     font-size: 12px;
   }
   .list-result {
-    flex: 4;
+    flex: 2;
   }
 }
+
+
 @media screen and (max-width: 600px) {
   .list-wrapper {
     width: 90%;
+  }
+  .list-search{
+    width: 120px;
+    padding: 5px;
+    flex: 1;
+  }
+
+  .list-wrapper {
+    gap: 10px;
   }
   .list-search-title {
     font-size: 12px;
@@ -120,17 +141,19 @@
 
   .list-search-item > span {
     height: 30px;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .list-option-item {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .list-search > button {
     padding: 5px;
   }
-  .list-result {
-    flex: 4;
+
+  .list-search-item label{
+    font-size: 10px;
   }
+
 }
